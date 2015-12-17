@@ -53,7 +53,7 @@ public class LabelImageView extends View {
     private void init(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.labelImageView);
         try {
-            //获取颜色，默认白色字体
+            //获取颜色，默认黑色字体
             textColor = typedArray.getColor(R.styleable.labelImageView_text_color, getResources().getColor(R.color.Black));
             contentStr = typedArray.getString(R.styleable.labelImageView_text_content);
             imageSrc = typedArray.getResourceId(R.styleable.labelImageView_image_src, R.drawable.icon_zbx);
